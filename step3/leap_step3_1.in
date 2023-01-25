@@ -1,0 +1,18 @@
+#Use Amber ff14SB force field
+source leaprc.protein.ff14SB
+source leaprc.water.tip3p
+source leaprc.gaff2
+loadamberparams frcmod.ionsjc_tip3p
+loadamberprep ../leap.wat/anion_pohb.prep
+loadamberprep ../leap.wat/peroxide2.prep
+
+#read a PDB file
+mol = loadPDB init_sample.pdb
+center mol
+set mol box {80 80 80}
+charge mol
+
+saveAmberParm mol init.parm7 init.rst7
+
+savePDB mol ref.pdb
+quit
