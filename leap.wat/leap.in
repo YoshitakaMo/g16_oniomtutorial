@@ -11,7 +11,7 @@ mol = loadPDB ../PDB/1iuw_ligands.pdb
 
 addIons mol Cl- 0
 addIons mol Na+ 0
-solvateBox mol TIP3PBOX 8.0
+solvateBox mol TIP3PBOX 3.0
 charge mol
 
 saveAmberParm mol leap.parm7 leap.rst7

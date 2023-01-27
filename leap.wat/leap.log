@@ -1,4 +1,4 @@
-log started: Wed Jan 25 11:07:42 2023
+log started: Fri Jan 27 12:07:18 2023
 
 Log file: ./leap.log
 >> #
@@ -425,7 +425,7 @@ Li/Merz ion parameters of divalent to tetravalent ions for TIP3P water model (12
 ----- Source: /Users/YoshitakaM/apps/amber22/dat/leap/cmd/leaprc.gaff2
 ----- Source of /Users/YoshitakaM/apps/amber22/dat/leap/cmd/leaprc.gaff2 done
 >> logFile leap.log
-log started: Wed Jan 25 11:07:42 2023
+log started: Fri Jan 27 12:07:18 2023
 
 Log file: ./leap.log
 >> #
@@ -558,6 +558,8 @@ Loaded UNIT: FAP
 > #read a PDB file
 > mol = loadPDB ../PDB/1iuw_ligands.pdb
 Loading PDB file: ../PDB/1iuw_ligands.pdb
+ (starting new molecule for chain A)
+ (starting new molecule for chain  )
 Matching PDB residue names to LEaP variables.
 Mapped residue MET, term: Terminal/beginning, seq. number: 0 to: NMET.
 Mapped residue GLU, term: Terminal/last, seq. number: 393 to: CGLU.
@@ -6966,34 +6968,34 @@ Adding 4 counter ions to "mol" using 1A grid
 Total solute charge:  -4.00  Max atom radius:   2.51
 Grid extends from solute vdw + 1.37  to  7.88
 Box:
-   enclosing:  -17.64 52.57  5.36   55.51 130.98 104.56
-   sized:			      110.36 180.57 133.36
+   enclosing:  -23.39 47.20 13.34   62.01 139.09 92.38
+   sized:			      104.61 175.20 141.34
    edge:        128.00
 Resolution:      1.00 Angstrom.
 Tree depth: 7
-Volume =  5.01% of box, grid points 105167
+Volume =  5.03% of box, grid points 105416
 Solvent present: replacing closest with ion
 	 when steric overlaps occur
 Calculating grid charges
 (Replacing solvent molecule)
-Placed Na+ in mol at (2.48, 79.13, 71.99).
+Placed Na+ in mol at (23.61, 95.60, 82.88).
 (Replacing solvent molecule)
-Placed Na+ in mol at (39.52, 107.19, 74.74).
+Placed Na+ in mol at (42.36, 120.59, 44.69).
 (Replacing solvent molecule)
-Placed Na+ in mol at (28.83, 116.92, 77.89).
+Placed Na+ in mol at (45.00, 107.51, 43.29).
 (Replacing solvent molecule)
-Placed Na+ in mol at (40.78, 104.66, 37.09).
+Placed Na+ in mol at (22.15, 67.92, 47.68).
 
 Done adding ions.
-> solvateBox mol TIP3PBOX 8.0
-  Solute vdw bounding box:              71.879 74.039 92.111
-  Total bounding box for atom centers:  87.879 90.039 108.111
+> solvateBox mol TIP3PBOX 3.0
+  Solute vdw bounding box:              85.939 85.393 79.108
+  Total bounding box for atom centers:  91.939 91.393 85.108
   Solvent unit box:                     18.774 18.774 18.774
-The number of boxes:  x= 5  y= 5  z= 6
-  Total vdw box size:                   91.309 92.934 111.296 angstroms.
-  Volume: 944431.188 A^3 
-  Total mass 471476.172 amu,  Density 0.829 g/cc
-  Added 17247 residues.
+The number of boxes:  x= 5  y= 5  z= 5
+  Total vdw box size:                   95.184 94.158 87.672 angstroms.
+  Volume: 785748.302 A^3 
+  Total mass 393773.164 amu,  Density 0.832 g/cc
+  Added 12934 residues.
 > charge mol
 Total unperturbed charge:   0.000000
 Total perturbed charge:     0.000000
@@ -7080,7 +7082,7 @@ Marking per-residue atom chain types.
 
 	CGLU	1
 	NMET	1
-	WAT	23596
+	WAT	19283
   )
  (no restraints)
 > 
